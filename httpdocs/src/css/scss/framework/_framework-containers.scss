@@ -1,0 +1,24 @@
+/* containers */
+
+.container,
+.container-inner {
+	position: relative;
+}
+
+.container {
+	width: 100%;
+}
+
+.container-inner {
+	padding: 0 $default-padding-mobile;
+
+	@include breakpoint(medium) {
+		margin: 0 auto;
+		padding: 0;
+		width: percent($container-inner-width-desktop, $viewport-width-max);
+	}
+
+	@include breakpoint(large) {
+		max-width: $container-inner-width-desktop;
+	}
+}

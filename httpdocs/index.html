@@ -1,0 +1,105 @@
+<!doctype html>
+<!--[if lt IE 9]>		<html class="no-js ie" lang="en">	<![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="en">	<!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Conditional Content Demo</title>
+
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="all">
+
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="stylesheet" href="dist/css/main.css">
+
+		<script src="src/js/lib/modernizr/modernizr-2.7.1.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<header id="header" class="container" role="banner">
+			<div class="container-inner cf">
+
+				<a id="logo" href="/">
+					<img src="http://dummyimage.com/400x400.gif&amp;text=logo" alt="Logo">
+				</a>
+
+				<nav class="nav-primary" role="navigation">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li class="search-trigger"><a href="#search">Search</a></li>
+					</ul>
+				</nav><!-- .nav-primary -->
+
+				<form id="search" class="hidden cf" role="search" aria-hidden="true" hidden>
+					<input type="text" name="keywords" value="" placeholder="Keywords">
+					<button type="submit" class="button button-primary">Go</button>
+				</form><!-- #search -->
+
+			</div><!-- .container-inner -->
+		</header><!-- #header -->
+
+		<div class="container">
+			<div class="container-inner cf">
+				<div id="main" role="main">
+					<div class="breadcrumbs module-placeholder" data-defer_src="includes/breadcrumbs.html" data-layout="xlarge|large|medium"></div>
+
+					<h1>Article Title</h1>
+
+					<div class="module-placeholder" data-defer_src="includes/tablet.html" data-layout="medium"></div>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+					<div class="enhanced-content" data-layout="xlarge|large">
+						<p>
+							<a class="button button-primary toggle toggle-images" href="includes/images.html">View Images</a>
+						</p>
+					</div><!-- .enhanced-content -->
+
+					<div class="module-placeholder" data-defer_src="includes/additional-details.html" data-layout="xlarge|large"></div>
+				</div><!-- #main -->
+
+				<aside id="sidebar" role="complementary">
+					<div class="module-placeholder" data-defer_src="includes/sidebar-nav.html" data-layout="xlarge|large|medium"></div>
+
+					<div class="callouts">
+						<ul>
+							<li><a class="button button-secondary" href="#">Callout One</a></li>
+							<li><a class="button button-secondary" href="#">Callout Two</a></li>
+							<li><a class="button button-secondary" href="#">Callout Three</a></li>
+						</ul>
+					</div><!-- .callouts -->
+				</aside><!-- #sidebar -->
+			</div><!-- .container-inner -->
+		</div><!-- #main -->
+
+		<footer id="footer" class="container" role="contentinfo">
+			<div class="container-inner">
+				<nav class="nav-secondary">
+					<ul class="cf">
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</nav><!-- .nav-secondary -->
+				<p class="attribution">&copy; 2014 Company Name</p>
+			</div><!-- .container-inner -->
+		</footer><!-- #footer -->
+
+		<script data-main="dist/js/main.build" src="src/js/lib/require/require.js"></script>
+
+	</body>
+
+</html>

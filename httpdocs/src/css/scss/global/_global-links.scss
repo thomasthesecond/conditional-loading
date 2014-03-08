@@ -1,0 +1,44 @@
+/* links */
+
+a {
+	@include transition-multiple((
+		background-color $default-transition-speed $default-transition-method,
+		color $default-transition-speed $default-transition-method,
+		opacity $default-transition-speed $default-transition-method
+	));
+
+	&:link,
+	&:visited {
+		color: $base-link-primary-color;
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:active {
+		color: darken($base-link-primary-color, 10%);
+	}
+}
+
+a.muted {
+	color: $base-color-muted;
+	text-decoration: underline;
+
+	&:hover,
+	&:active {
+		color: darken($base-color-muted, 10%);
+	}
+}
+
+a.underline {
+	text-decoration: underline;
+
+	&:hover,
+	&:active {
+		text-decoration: none;
+	}
+}
+
+.link-small {
+	font-size: 10px;
+	text-transform: uppercase;
+}

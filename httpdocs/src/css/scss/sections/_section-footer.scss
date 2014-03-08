@@ -1,0 +1,37 @@
+/* footer */
+
+#footer {
+	border-top: 1px solid lighten($base-font-color, 40%);
+	margin-top: 40px;
+	padding: 40px 0;
+
+	@include breakpoint(small) {
+		& {
+			padding: 60px 0 80px;
+		}
+
+		.nav-secondary {
+			float: right;
+			text-align: right;
+			width: 50%;
+
+			li {
+				display: inline-block;
+
+				&:before {
+					content: ' / ';
+				}
+
+				&:first-child:before {
+					content: '';
+				}
+			}
+		}
+
+		.attribution {
+			float: left;
+			margin: 0;
+			width: 50%;
+		}
+	}
+}

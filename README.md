@@ -1,4 +1,3 @@
-conditional-content
-===================
+# Conditional Loading for Responsive Design
 
-Conditional content demo
+Demonstrating loading content conditional via AJAX for mobile-first respsonsive design.
