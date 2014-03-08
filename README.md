@@ -4,7 +4,7 @@ Demonstrating loading content conditional via AJAX for mobile-first respsonsive 
 
 ## Demo
 
-View Demo
+[View Demo](http://thomasthesecond.github.io/conditional-loading/)
 
 ## Purpose
 
