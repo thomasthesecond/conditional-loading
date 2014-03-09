@@ -40,11 +40,20 @@ The markup looks similar to this:
 
 Here we have a `div` with the class `enhanced-content` (to differentiate from the automatic method above) in which the content will be loaded. Again, the `layout` data attribute is utilized to define when the content should be loaded automatically. If none of the defined breakpoints match the current breakpoint on load, then the content is not loaded until the `button` element is clicked.
 
+## File Size Comparison
+
+Out of curiosity, here are the differences in file sizes between HTML documents:
+
+* 4 KB: Mobile-first (only necessary content loaded)
+* 7 KB: Desktop-first (all content loaded at once)
+
 ## Issues
 
 Please report any issues or questions you may have. I'm sure that this method is far from perfect and can be improved upon. The goal is to create a solution that can safely and effectively be used on production-ready websites.
 
-* The JavaScript code for the `initEnhancedContent` method probably can be refactored.
+### HTTP Requests
+
+The additional HTTP requests added by the AJAX includes could keep this from being a viable solution on larger websites.
 
 <a name="inspiration"></a>
 ## Inspiration
