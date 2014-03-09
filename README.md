@@ -47,13 +47,19 @@ Out of curiosity, here are the differences in file sizes between HTML documents:
 * 4 KB: Mobile-first (only necessary content loaded)
 * 7 KB: Desktop-first (all content loaded at once)
 
+But as we know, making our files smaller, while always important, is only a small part of creating high-performance website. [Reducing HTTP requests](http://developer.yahoo.com/blogs/ydn/high-performance-sites-rule-1-fewer-http-requests-7163.html) is top priority. See [Issues](#issues) below.
+
+<a name="issues"></a>
 ## Issues
 
 Please report any issues or questions you may have. I'm sure that this method is far from perfect and can be improved upon. The goal is to create a solution that can safely and effectively be used on production-ready websites.
 
 ### HTTP Requests
 
-The additional HTTP requests added by the AJAX includes could keep this from being a viable solution on larger websites. In the demo, the number of requests more than double on larger screens. [Filament Group](http://filamentgroup.com/lab/ajax_includes_modular_content/) created a nice workaround by concatenating the embeds into a single file, thus a single request.
+The additional HTTP requests added by the AJAX includes could keep this from being a viable solution on larger websites. In the demo, the number of requests more than double on larger screens. While these extra requests only occur on larger screens, it's possible that a larger screen could be an iPad using a 3G network.
+
+* [Filament Group](http://filamentgroup.com/lab/ajax_includes_modular_content/) created a nice workaround by concatenating the embeds into a single file, thus a single request.
+* On ExpressionEngine websites, I had a crazy thought to use one or a few embeds for all content. Basically, manually concatenating what would be many separate files and then writing some extra JavaScript to pull in the specific section of content where it's needed.
 
 <a name="inspiration"></a>
 ## Inspiration
