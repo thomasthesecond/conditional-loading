@@ -53,7 +53,7 @@ Please report any issues or questions you may have. I'm sure that this method is
 
 ### HTTP Requests
 
-The additional HTTP requests added by the AJAX includes could keep this from being a viable solution on larger websites.
+The additional HTTP requests added by the AJAX includes could keep this from being a viable solution on larger websites. In the demo, the number of requests more than double on larger screens. [Filament Group](http://filamentgroup.com/lab/ajax_includes_modular_content/) created a nice workaround by concatenating the embeds into a single file, thus a single request.
 
 <a name="inspiration"></a>
 ## Inspiration
