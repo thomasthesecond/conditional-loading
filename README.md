@@ -59,7 +59,7 @@ Please report any issues or questions you may have. I'm sure that this method is
 The additional HTTP requests added by the AJAX includes could keep this from being a viable solution on larger websites. In the demo, the number of requests more than double on larger screens. While these extra requests only occur on larger screens, it's possible that a larger screen could be an iPad using a 3G network.
 
 * [Filament Group](http://filamentgroup.com/lab/ajax_includes_modular_content/) created a nice workaround by concatenating the embeds into a single file, thus a single request.
-* On ExpressionEngine websites, I had a crazy thought to use one or a few embeds for all content. Basically, concatenating (manually or automatically using [Grunt](http://gruntjs.com)) what would be many separate files and then writing some extra JavaScript to pull in the specific section of content where it's needed. This might  not a good idea when considering long term maintenance.
+* On ExpressionEngine websites, I had a crazy thought to use one or a few embeds for all content. Basically, concatenating (manually or automatically using [Grunt](http://gruntjs.com)) what would be many separate files and then writing some extra JavaScript to pull in the specific section of content where it's needed. This might  not be a good idea when considering long term maintenance.
 
 <a name="inspiration"></a>
 ## Inspiration
